@@ -1,1 +1,1 @@
-# cocktail-app v1
+# cocktail-app v1.0.0
