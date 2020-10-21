@@ -4,7 +4,7 @@
   "description": "cocktail app project",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack --mode development && sass --watch src/scss/index.scss:dist/css/styles.min.css",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
@@ -23,6 +23,7 @@
     "axios": "^0.20.0",
     "babel-polyfill": "^6.26.0",
     "fractional": "^1.0.0",
+    "sass": "^1.27.0",
     "uniqid": "^5.2.0"
   }
 }
