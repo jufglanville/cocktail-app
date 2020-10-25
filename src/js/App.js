@@ -19,9 +19,8 @@ class App {
   static render(view) {
     const rootNode = document.getElementById("root");
     const html = view.render();
-
     if (html) {
-      rootNode.innerHTML = view.render();
+      rootNode.innerHTML = html;
     } else {
       throw new Error("HTML markup not found for view: " + view.name);
     }

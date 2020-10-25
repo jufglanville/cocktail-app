@@ -7,11 +7,12 @@ import Component from "./Component";
  * */
 export default class SampleComponent extends Component {
   // Sample variables
-  static foo = "Foo";
-  static bar = "Bar";
+  foo = "Foo";
+  bar = "Bar";
 
   // HTML Markup
-  static html = `<div class="sample-component">
+  setHtml = () => {
+    return `<div class="sample-component">
     <p class="sample-component__paragraph">This is a sample component.</p>
     <p class="sample-component__paragraph">Any valid HTML can be used here, as
         well as ${"Java" + "Script"} or instances of components (as long as they
@@ -19,10 +20,11 @@ export default class SampleComponent extends Component {
     <p>Values computed using JavaScript can be injected directly into the HTML,
         as long as they represent or return a string. For example:
         ${this.myFunc()}</p>
-</div>`;
+            </div>`;
+  };
 
   // Sample function (returns "foo")
-  static myFunc() {
+  myFunc() {
     return this.foo.indexOf("o") === 1
       ? "f" + this.foo.substring(1, this.foo.length)
       : "b" + this.bar + this.bar.substring(1, this.bar.length);

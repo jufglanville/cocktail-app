@@ -18,9 +18,10 @@ export default class View {
    * */
   static render() {
     let view = "";
-    for (let i in this.components) {
-      view += this.components[i].getHtml();
-    }
+
+    this.components.forEach((component) => {
+      view += component.getHtml();
+    });
     return view;
   }
 }
