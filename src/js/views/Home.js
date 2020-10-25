@@ -1,18 +1,9 @@
-/**
- * @summary Represents the view for the home page.
- * */
+import View from "./View";
+import SampleComponent from "../components/SampleComponent";
 
-export default class Home {
-  /**
-   * Builds and returns the HTML ready to be rendered.
-   * @return {String} the HTML to inject in the DOM.
-   * */
-  static async render() {
-    const view = `
-            <div class="home">
-                <p>Sample Home</p>
-            </div>
-        `;
-    return view;
-  }
+/**
+ * Represents the view for the home page.
+ * */
+export default class Home extends View {
+  static components = [SampleComponent];
 }

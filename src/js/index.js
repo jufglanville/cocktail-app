@@ -1,2 +1,2 @@
-import "./utils/router";
+import "./App";
 import "../scss/index.scss";
