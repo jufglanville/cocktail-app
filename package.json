@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "doc": "jsdoc -c conf.json"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +30,7 @@
     "axios": "^0.20.0",
     "babel-polyfill": "^6.26.0",
     "fractional": "^1.0.0",
+    "jaguarjs-jsdoc": "^1.1.0",
     "uniqid": "^5.2.0"
   }
 }
