@@ -1,3 +1,6 @@
+import Home from "./views/Home";
+import View from "./views/View";
+
 /**
  * @summary Initialises and handles the rendering of views in the app.
  * @desc Creates an application that initially renders the Home view,
@@ -5,10 +8,6 @@
  *       to be rendered, they need to extend the View component, as well
  *       as implement a valid render method.
  * */
-
-import Home from "./views/Home";
-import View from "./views/View";
-
 class App {
   /**
    * Builds the HTML using the render method of the given view, then injects

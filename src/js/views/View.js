@@ -8,7 +8,7 @@
  *       the render method builds them sequentially.
  * */
 
-export default class View {
+class View {
   static components = [];
 
   /**
@@ -25,3 +25,5 @@ export default class View {
     return view;
   }
 }
+
+export default View;

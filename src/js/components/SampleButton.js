@@ -3,7 +3,7 @@ import Component from "./Component";
 /**
  * @summary Represents a sample button.
  * */
-export default class Button extends Component {
+class Button extends Component {
   // Sample props
   propTypes = {
     text: {
@@ -19,3 +19,5 @@ export default class Button extends Component {
     return `<div class="button">${this.props.text}</div>`;
   };
 }
+
+export default Button;

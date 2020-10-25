@@ -6,7 +6,7 @@ import Button from "../components/SampleButton";
  * Represents the view for the home page. Currently holds placeholder
  * values used for testing.
  * */
-export default class Home extends View {
+class Home extends View {
   static components = [
     new SampleComponent(),
     // Doesn't define a value for prop 'text', so will use default.
@@ -15,3 +15,5 @@ export default class Home extends View {
     new Button({ text: "Something" }),
   ];
 }
+
+export default Home;

@@ -7,7 +7,7 @@
  *       variable 'html', and can legally instantiate new components
  *       as well as static markup.
  * */
-export default class Component {
+class Component {
   /**
    * Defines the default value of each prop, as well as whether it
    * is required. The default value is only used if a prop is not
@@ -91,3 +91,5 @@ export default class Component {
     }
   };
 }
+
+export default Component;

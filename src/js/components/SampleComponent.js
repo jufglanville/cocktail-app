@@ -5,7 +5,7 @@ import Component from "./Component";
  * @desc Shows the correct way to instantiate a new component by
  *       extending the parent class Component.
  * */
-export default class SampleComponent extends Component {
+class SampleComponent extends Component {
   // Sample variables
   foo = "Foo";
   bar = "Bar";
@@ -30,3 +30,5 @@ export default class SampleComponent extends Component {
       : "b" + this.bar + this.bar.substring(1, this.bar.length);
   }
 }
+
+export default SampleComponent;
