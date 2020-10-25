@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Class: Component</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html"></a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="App">
+            <span class="title">
+                <a href="App.html">App</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="App.init"><a href="App.html#.init">init</a></li>
+            
+                <li data-name="App.render"><a href="App.html#.render">render</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Button">
+            <span class="title">
+                <a href="Button.html">Button</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Component">
+            <span class="title">
+                <a href="Component.html">Component</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li data-name="Component#getHtml"><a href="Component.html#getHtml">getHtml</a></li>
+            
+                <li data-name="Component#propTypes"><a href="Component.html#propTypes">propTypes</a></li>
+            
+                <li data-name="Component#setHtml"><a href="Component.html#setHtml">setHtml</a></li>
+            
+                <li data-name="Component#validateProps"><a href="Component.html#validateProps">validateProps</a></li>
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Home">
+            <span class="title">
+                <a href="Home.html">Home</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="SampleComponent">
+            <span class="title">
+                <a href="SampleComponent.html">SampleComponent</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="View">
+            <span class="title">
+                <a href="View.html">View</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="View.render"><a href="View.html#.render">render</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="Component.html">Class: Component</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2>
+    Component
+    </h2>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="Component">
+            
+            new Component<span class="signature">(props)</span>
+        </h4>
+    
+        
+        <div class="tag-source">
+            components/Component.js, line 10
+        </div>
+        
+    </div>
+
+    
+    <p class="summary">Represents a modular HTML component.</p>
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        The Component class acts as a blueprint for every Component
+      that extends it, providing an access method to retrieve the
+      HTML markup of the component. Classes that extend Component
+      only have to assign a string with valid HTML to the static
+      variable 'html', and can legally instantiate new components
+      as well as static markup.
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                An object that holds all props that have
+                been used in the component for dynamic values.</td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getHtml">getHtml</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Returns the HTML markup for the component.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="propTypes">propTypes<span class="type-signature type object">Object</span> </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Defines the default value of each prop, as well as whether it
+is required. The default value is only used if a prop is not
+required and has no explicit value given in the constructor.
+The default value of isRequired is false, so it can be omitted;
+similarly, it's unnecessary to define a default value for any
+required prop, since their values must be explicitly specified.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+        <h5>Examples</h5>
+        
+
+    
+    <pre class="prettyprint"><code>propTypes = {
+    propName: {
+        isRequired: false,
+        default: 123,
+    },
+}</code></pre>
+    
+
+
+    
+    <pre class="prettyprint"><code>propTypes = {
+    foo: {
+        default: "Foo",
+    },
+    bar: {
+        isRequired: true
+    }
+}</code></pre>
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="setHtml">setHtml</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Directly returns the HTML markup for the component. This function
+must be implemented by children classes, and has to return valid HTML.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="validateProps">validateProps</h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Checks each passed prop to ensure that all required ones have
+been specified in the constructor. If a prop has a default value,
+it's used whenever a value has not been explicitly specified.
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+    
+    
+
+    
+</article>
+
+</section>  
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sun Oct 25 2020 19:48:06 GMT+0000 (Greenwich Mean Time)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/jaguar.js"></script>
+</body>
+</html>
