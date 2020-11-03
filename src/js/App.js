@@ -1,5 +1,7 @@
 import Home from "./views/Home";
 import View from "./views/View";
+import Weather from "./components/Weather";
+import Location from "./components/Location";
 
 /**
  * @summary Initialises and handles the rendering of views in the app.
@@ -36,3 +38,22 @@ class App {
 }
 
 App.init();
+
+
+
+const state = {};
+
+// For testing
+window.state = state;
+
+window.addEventListener('load', () => {
+
+    // Create a new Location IF there is none yet
+    if (!state.location) state.location = new Location();
+    state.location.getLocation();
+
+    // Create a new Weather IF there is none yet
+    if (!state.weather) state.weather = new Weather();
+    // state.weather.getWeather(state.location.latitude, state.location.longitude);
+
+});
