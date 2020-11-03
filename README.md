@@ -1,1 +1,0 @@
-# cocktail-app v1.0

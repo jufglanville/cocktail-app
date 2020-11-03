@@ -1,4 +1,5 @@
 import Component from "./Component";
+import Weather from "./Component";
 
 /**
  * @summary Represents a sample component.

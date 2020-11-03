@@ -5,8 +5,8 @@ This file is only used as an example, and will be deleted.
 .button {
   font-size: 14px;
   line-height: 19px;
-  border: 1px solid $color-pink;
-  color: $color-pink;
+  // border: 1px solid $color-pink;
+  // color: $color-pink;
   cursor: pointer;
   display: inline-block;
   padding: 10px 25px;
@@ -15,7 +15,7 @@ This file is only used as an example, and will be deleted.
   user-select: none;
 
   &:hover {
-    border: 1px solid $color-white-0;
-    color: $color-white-0;
+    // border: 1px solid $color-white-0;
+    // color: $color-white-0;
   }
 }
