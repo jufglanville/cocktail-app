@@ -48,12 +48,13 @@ window.state = state;
 
 window.addEventListener('load', () => {
 
-    // Create a new Location IF there is none yet
-    if (!state.location) state.location = new Location();
-    state.location.getLocation();
+  // Create a new Location IF there is none yet
+  // if (!state.location) state.location = new Location();
+  // // Get user coordinates
+  // state.location.getLocation();
 
-    // Create a new Weather IF there is none yet
-    if (!state.weather) state.weather = new Weather();
-    // state.weather.getWeather(state.location.latitude, state.location.longitude);
-
+  // Create a new Weather IF there is none yet
+  if (!state.weather) state.weather = new Weather();
+  // Get Weather Data
+  state.weather.getWeather();
 });
